@@ -3,18 +3,11 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 const dotenv = require("dotenv").config();
 const cors = require("cors");
-const corsConfig = {
-  origin: "*",
-  credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  headers: ["Content-Type", "Authorization"],
-  };
-app.options("",cors(corsConfig));
+c
 
 const app = express();
 const PORT = 8080;
-const uri =
-  "mongodb+srv://uccranjana13:36Oc0veUGUQ3JLnn@clustermy.pczueyb.mongodb.net/?retryWrites=true&w=majority&appName=loginandsignup";
+
 app.use(express.json());
 app.use(cors(corsConfig));
 
